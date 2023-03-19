@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import defaultAvatarImage from 'components/default.png';
 import css from './FriendListItem.module.css';
 
@@ -16,3 +17,10 @@ export function FriendListItem({ avatar, name, isOnline, id }) {
     </li>
   );
 }
+
+FriendListItem.propTypes = {
+  avatar: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  isOnline: PropTypes.bool.isRequired,
+  id: PropTypes.number,
+};

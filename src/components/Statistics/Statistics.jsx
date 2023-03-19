@@ -26,6 +26,6 @@ function randomColor() {
 }
 
 Statistics.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   stats: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
